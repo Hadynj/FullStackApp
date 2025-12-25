@@ -1,4 +1,4 @@
-# Full Stack App
+# Full Stack App (Postgres, Express, React, Node.js: PERN)
 The goal of this project is to connect a React app to a Postgres Database using an Express API with CRUD functions.
 
 - [x] The React app can create, read, update, and delete data in the database.
