@@ -1,12 +1,14 @@
 const express = require('express')
 const app = express ()
+const db = require('./queries')
 const PORT = 5500
 
 // Routes
-app.get('/', (req, res) =>{
+app.get('/links', (req, res) =>{
     // we'll do some stuff here
     res.send("Hellooooo from the server!")
 })
+
 
 app.get('/test', (req, res) => {
     // do something with the res
