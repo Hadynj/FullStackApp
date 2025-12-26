@@ -8,6 +8,11 @@ app.get('/', (req, res) =>{
     res.send("Hellooooo from the server!")
 })
 
+app.get('/test', (req, res) => {
+    // do something with the res
+
+})
+
 // CRUD
 // CREATE - add data to db
 // READ - get data from db
