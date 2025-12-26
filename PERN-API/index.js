@@ -9,10 +9,10 @@ app.get('/', (req, res) =>{
 })
 
 // CRUD
-// CREATE
-// READ
-// UPDATE
-// DELETE
+// CREATE - add data to db
+// READ - get data from db
+// UPDATE - updater data in db
+// DELETE - remove data from db
 
 
 
