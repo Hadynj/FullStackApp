@@ -1,7 +1,7 @@
 // Connect to Postgres using the node-postgres package
 
-const POOL = require('pg').Pool
-const pool = new POOL({
+const Pool = require('pg').Pool
+const pool = new Pool({
     user: 'me',
     host: 'localhost',
     database: 'favlinks',

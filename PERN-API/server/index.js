@@ -1,13 +1,16 @@
 const express = require('express')
-const app = express ()
 const path = require('path')
 const db = require('./queries')
-const PORT = 5500
 
 // middleware
+const app = express ()
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
 // host react app as static files
 app.use(express.static(path.resolve(__dirname, '../client/build')))
+
+const PORT = 5500
 
 // Routes
 app.get('/links', (req, res) =>{
