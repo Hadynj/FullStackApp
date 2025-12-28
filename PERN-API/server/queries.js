@@ -12,6 +12,9 @@ const pool = new Pool({
 // create all the functions that will be our requests handlers in our express server
 
 // create a new link in the db
+const createLinks = ({
+
+})
 
 // read all the data from db 
 const getLinks = (request, response) => {
@@ -30,6 +33,7 @@ const getLinks = (request, response) => {
 
     module.exports = {
         getLinks,
+        createLinks,
 
     }
 
