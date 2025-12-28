@@ -31,6 +31,7 @@ app.get('/test', (req, res) => {
 
 // READ - get data from db
 app.get('/links', db.getLinks)
+app.post('/links', db.createLinks)
 
 // UPDATE - updater data in db
 
