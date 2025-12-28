@@ -14,7 +14,7 @@ const pool = new Pool({
 // create a new link in the db
 
 // read all the data from db 
-const getLinks = () => {
+const getLinks = (request, response) => {
     pool.query('SELECT * FROM links ORDER BY id ASC', (error, result) =>{
         if(error){
             throw error
