@@ -6,14 +6,14 @@ const pool = new Pool({
     host: 'localhost',
     database: 'favlinks',
     password: 'password',
-    port: 5432,
+    
 
 })
 // create all the functions that will be our requests handlers in our express server
 
 // create a new link in the db
 const createLinks = (request, response) => {
-    
+
 }
 
 // read all the data from db 
