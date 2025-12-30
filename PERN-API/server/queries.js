@@ -14,6 +14,9 @@ const pool = new Pool({
 // create a new link in the db
 const createLinks = (request, response) => {
     // take the data the user passes us and insert it into our table
+    const name = request.body.name
+    const URL = request.body.URL
+    pool.query('INSERT INTO links (name, URL) VALUES ($1, $2'), (name, URL)
 }
 
 // read all the data from db 
