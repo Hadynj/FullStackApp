@@ -16,13 +16,17 @@ const createLinks = (request, response) => {
     // take the data the user passes us and insert it into our table
     const name = request.body.name
     const URL = request.body.URL
-    pool.query('INSERT INTO links (name, URL) VALUES ($1, $2'), [name, URL], (error, results) => 
+    pool.query(
+        'INSERT INTO links (name, URL) VALUES (test, test.com)', 
+        [name, URL], 
+        (error, results) => 
     {
         if (error){
             throw error
         }
         response.status(201).send('Link with ID: ${resukts.insertId}')
     }
+)
 }
 
 // read all the data from db 
