@@ -13,11 +13,12 @@ const pool = new Pool({
 
 // create a new link in the db
 const createLinks = (request, response) => {
-
+    // take the data the user passes us and insert it into our table
 }
 
 // read all the data from db 
 const getLinks = (request, response) => {
+    // get back all the data currently in the database
     pool.query('SELECT * FROM links ORDER BY id ASC', (error, result) =>{
         if(error){
             throw error
